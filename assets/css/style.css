@@ -823,10 +823,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50vh;
+    height: 40vh;
     padding: 1.9rem 1.7rem;
     color: white;
-    background: linear-gradient(to top, rgb(28, 52, 175), rgba(34, 34, 161, 0.5), rgba(29, 1, 122, 0));
+    background: linear-gradient(to top, rgb(28, 52, 175), rgba(34, 34, 161, 0.3), rgba(29, 1, 122, 0));
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
