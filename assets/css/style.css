@@ -42,6 +42,29 @@ body {
     border-color: #239b65;
 }
 
+/* global */
+.section-sub-title {
+    text-align: center; 
+    font-family: 'Water Brush', cursive;
+    font-weight: 400; 
+    font-size: 45px;   
+    color: #11A453;
+}
+
+.section-title {  
+    font-weight: 700;
+    font-style: Bold; 
+    font-size: 42px;
+    line-height: 44px;
+    letter-spacing: 0%;
+    text-align: center;  
+    font-weight: 600; 
+    margin-bottom: 3rem; 
+} 
+ 
+
+/* end global */
+
 .search-box {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 12px;
@@ -90,7 +113,7 @@ body {
 
 .banner-title {
     font-weight: 600;
-    font-size: 4.5rem;
+    font-size: 5.64rem;
     line-height: 100%;
     letter-spacing: 0%;
 }
@@ -216,6 +239,25 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
     padding: 0 1rem;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
+}
+.heroSwiper {
+  background-color: #000;
+  width: 100%;
+  height: 80vh;
+}
+.heroSwiper .swiper-slide {
+  transition: opacity 1s ease-in-out;
+  background-color: #000;
+}
+.heroSwiper img { 
+    object-fit: cover;
+    display: block;
+    width: 100%; 
 }
 
 @media (max-width: 576px) {
@@ -396,6 +438,8 @@ body {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    height: 230px;
+    background: #e6e6e6;
 }
 
 #popular-day-trips .trip-card img {
@@ -451,52 +495,35 @@ body {
 #popular-day-trips .swiper-pagination-bullet-active {
     background-color: #24a86c !important;
 }
+/* end popular section */
+
 
 
 /* holyday section */
 
 #featured .section-sub-title {
-    text-align: center;
-    margin-bottom: 3rem;
+    text-align: center; 
     font-family: 'Water Brush', cursive;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 45px;
-    line-height: 44px;
-    vertical-align: middle;
-    color: #11A453; 
-    font-size: 45px;
-    line-height: 44px;
-    vertical-align: middle;
+    font-weight: 400; 
+    font-size: 45px;   
     color: #11A453;
 }
 
 #featured .section-title {  
     font-weight: 700;
-    font-style: Bold;
-    font-size: 42px; 
+    font-style: Bold; 
+    font-size: 42px;
     line-height: 44px;
     letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;  
-    font-weight: 600;
-    font-size: 1.25rem;
+    text-align: center;  
+    font-weight: 600; 
     margin-bottom: 3rem; 
-}
-
-/* main title */
-#featured .section-title h2 {
-    font-weight: 900;
-    font-size: 2.75rem;
-}
-
-/* Swiper container inside #featured */
+} 
+ 
 #featured .swiper {
-    padding-bottom: 3rem;
-    /* space for pagination */
+    padding-bottom: 3rem; 
 }
-
-/* Card styles unchanged, but scoped inside #featured */
+ 
 #featured .tour-card {
     background: white;
     border-radius: 1rem;
@@ -509,7 +536,7 @@ body {
 
 #featured .tour-card img {
     width: 100%;
-    height: 200px;
+    height: 258px;
     object-fit: cover;
 }
 
@@ -517,16 +544,16 @@ body {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background-color: #2c8c3e;
+    background-color: #11A453;
     color: white;
     padding: 0.25rem 0.75rem;
-    border-radius: 1.25rem;
+    border-radius: 1.25rem; 
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     z-index: 10;
-}
+} 
 
 #featured .tour-card-body {
     padding: 1rem 1.25rem 1.25rem 1.25rem;
@@ -545,32 +572,26 @@ body {
 
 #featured .tour-title {
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 #featured .tour-duration {
-    font-size: 0.9rem;
+    font-size: 14px;
     color: #8a8a8a;
 }
 
 #featured .location {
-    font-size: 0.9rem;
+    font-size:14px;
     color: #7c8a80;
     display: flex;
-    align-items: center;
-    gap: 0.25rem;
+    align-items: center; 
     margin-bottom: 1rem;
 }
-
-#featured .location svg {
-    fill: #2c8c3e;
-    width: 16px;
-    height: 16px;
-}
+ 
 
 #featured .explore-link {
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size:14px;
     color: #0b1749;
     text-decoration: none;
     display: inline-flex;
@@ -581,12 +602,19 @@ body {
 
 #featured .explore-link:hover {
     color: #2c8c3e;
+    font-size: 14px;
 }
 
 #featured .price {
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 20px;
     color: #2c8c3e;
+    text-align: right;
+}
+#featured .from {
+    font-weight: 300;
+    font-size: 14px;
+    color: #868686;
     text-align: right;
 }
 
@@ -637,10 +665,27 @@ body {
     left: -10px;
 }
 
-.post-img-wrapper {
+
+/* tour activity section  */ 
+#tour-activity .tour-activity-swiper .title {
+    font-size: 20px !important;
+    font-weight: 600;
+    color: #000000 !important
+}
+
+#tour-activity .tour-activity-swiper .sub-title {
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #999999 !important
+}
+
+/* end of tour activity section */
+
+
+/* recent post section */
+#recent-post .post-img-wrapper {
     height: 250px;
-    background-color: #aeb6bd;
-    /* Bootstrap light */
+    background-color: #aeb6bd; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -648,24 +693,22 @@ body {
     overflow: hidden;
 }
 
-.post-img-wrapper img {
+#recent-post .post-img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.post-img-wrapper.no-image::after {
+#recent-post .post-img-wrapper.no-image::after {
     content: "No Image";
     font-size: 1rem;
     color: #6c757d;
 }
-
-/* recent post section */
-.post-img-wrapper {
+ 
+#recent-post .post-img-wrapper {
     height: 250px;
-    background-color: #f8f9fa;
-    /* Bootstrap light */
+    background-color: #f8f9fa; 
     border-radius: 0.75rem;
     overflow: hidden;
     display: flex;
@@ -674,23 +717,30 @@ body {
     position: relative;
 }
 
-.post-img-wrapper img {
+#recent-post .post-img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.post-img-wrapper img[src=""] {
+#recent-post .post-img-wrapper img[src=""] {
     display: none;
 }
 
-.post-img-wrapper img[src=""]::before {
+#recent-post .post-img-wrapper img[src=""]::before {
     content: "No Image";
 }
 
-.post-img-wrapper img[src=""]+.no-image {
+#recent-post .post-img-wrapper img[src=""]+.no-image {
     display: block;
+}
+#recent-post .card-body .badge{
+    background: #11A453;
+    font-size: 11px !important;
+    padding: 6px 10px;
+    font-weight: 300;
+    border-radius: 3px;
 }
 
 .no-image {
@@ -699,3 +749,144 @@ body {
     font-size: 1rem;
     display: none;
 }
+
+#recent-post .card-body .description {
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #999999 !important
+}
+#recent-post .card-body .read-more {
+    font-size: 14px !important; 
+    font-weight: 600;
+}
+#recent-post .card-title {
+    font-size: 21px !important;
+    font-weight: 400 ! important;
+    color: #000000 !important;
+    margin-top: 10px;
+    margin-bottom: 15px;
+} 
+
+/* end of recent post section */
+
+
+/* travelers choice section */ 
+#traveller-choice .section-sub-title { 
+     font-family: 'Water Brush', cursive;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 45px;
+    line-height: 44px;
+    vertical-align: middle;
+    color: #11A453; 
+}
+
+#traveller-choice .section-title { 
+   font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 42px; 
+    line-height: 44px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle; 
+} 
+
+#traveller-choice .section-title h5 {
+    color: #24a86c;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#traveller-choice .section-title h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#traveller-choice .trip-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 399px;
+    background: #e6e6e6;
+}
+
+#traveller-choice .trip-card img {
+    width: 100%;
+    height: 399px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#traveller-choice .trip-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50vh;
+    padding: 1.9rem 1.7rem;
+    color: white;
+    background: linear-gradient(to top, rgb(28, 52, 175), rgba(34, 34, 161, 0.5), rgba(29, 1, 122, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+
+#traveller-choice .trip-info h5 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#traveller-choice .trip-info p {
+    margin: 0;
+    font-size: 13px !important;
+    color: #11A453;
+    font-weight: 400 ! important;
+    font-size: 12px !important; 
+
+}
+
+#traveller-choice .explore-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(2, 112, 2, 0.3);
+    border: 0.8px solid #11A453 !important;
+    color: white;
+    border: none;
+    padding: 5px 15px; 
+    font-size: 12px;
+    font-weight: 400 !important;
+    width: 80;
+    height: 32;  
+    border-radius: 33px;  
+}
+
+#traveller-choice .price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #2c8c3e;
+    text-align: right;
+    margin-right: 12px;
+}
+
+ #traveller-choice .from {
+    font-weight: 300;
+    font-size: 14px;
+    color: #868686;
+    text-align: right;
+}
+
+#traveller-choice .swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #aaa;
+    opacity: 1;
+}
+
+#traveller-choice .swiper-pagination-bullet-active {
+    background-color: #24a86c !important;
+}
+
+/* end of travelers choice section */
