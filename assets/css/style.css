@@ -248,7 +248,7 @@ body {
 .heroSwiper {
   background-color: #000;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 .heroSwiper .swiper-slide {
   transition: opacity 1s ease-in-out;
@@ -264,6 +264,12 @@ body {
     .carousel-overlay {
         top: 40%;
     }
+
+.heroSwiper { 
+  max-height: 464px;
+  height: 90vh;
+  max-height: 764px;
+}
 }
 
 
@@ -868,7 +874,7 @@ body {
 #traveller-choice .price {
     font-weight: 700;
     font-size: 20px;
-    color: #2c8c3e;
+    color: #11A453;
     text-align: right;
     margin-right: 12px;
 }
@@ -876,7 +882,7 @@ body {
  #traveller-choice .from {
     font-weight: 300;
     font-size: 14px;
-    color: #868686;
+    color: #b1b1b1;
     text-align: right;
 }
 
@@ -890,3 +896,136 @@ body {
 }
 
 /* end of travelers choice section */
+
+/* ====== Testimonials Section Styles ====== */
+#testimonials {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+#testimonials .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#testimonials .section-subtitle {
+  color: #28a745;
+  font-style: italic;
+  font-weight: 500;
+}
+
+#testimonials .testimonial-quote {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #333;
+}
+
+#testimonials .testimonial-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#testimonials .swiper {
+  width: 100%;
+  padding: 30px 0;
+}
+
+#testimonials .swiper-pagination-bullet {
+  background: #28a745;
+}
+/* end of testimonials section */
+
+/* ====== Why Choose Us Section Styles ====== */
+#why-us {
+  background-color: #fdfbf7;
+  padding: 3rem 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#why-us .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#why-us .section-subtitle {
+  color: #28a745;
+  font-style: italic;
+  font-weight: 500;
+}
+
+#why-us .why-text {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+  font-size: 1rem;
+}
+
+#why-us .why-icon img {
+  height: 48px;
+  margin-bottom: 12px;
+}
+
+#why-us h6 {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+#why-us p {
+  color: #666;
+  font-size: 0.9rem;
+}
+/* end of why choose us section */
+
+
+
+/* unforgettable section */  
+
+  #unforgettable { 
+    padding: 3rem 0;
+    background-color: #fdf9f6;
+  }
+
+  #unforgettable .section-subtitle {
+    color: #28a745;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  #unforgettable .section-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+  #unforgettable .section-description {
+    color: #555;
+    font-size: 1rem;
+  }
+
+  #unforgettable .feature-box {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease-in-out;
+  }
+
+  #unforgettable .feature-box:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  #unforgettable .feature-icon {
+    width: 40px;
+    margin-right: 15px;
+  }
+
+  @media (max-width: 767px) {
+    #unforgettable .section-title {
+      font-size: 1.8rem;
+    }
+  } 
+
+/* end of unforgettable section */
