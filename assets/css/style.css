@@ -1115,9 +1115,11 @@ body {
 }
 
 #testimonials .testimonial-quote {
-    font-size: 1.25rem;
-    font-style: italic;
-    color: #333;
+    font-size: 18px; 
+    color: #666666;
+}
+#testimonials .testimonial-quote-logo {
+    font-size: 18pxrem; 
 }
 
 #testimonials .testimonial-img {
