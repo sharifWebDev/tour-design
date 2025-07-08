@@ -1,18 +1,22 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    background-color: #fdfaf8;
+    background: #F9F4F0;
 }
 
-.navbar {
+/* Start Page Header */
+#page-header {
+     background: #F9F4F0;
+}
+#page-header .navbar {
     border-bottom: 1px solid #efefef;
 }
 
-.nav-link.active {
+#page-header .nav-link.active {
     position: relative;
 }
 
-.nav-link.active::after {
+#page-header .nav-link.active::after {
     content: '';
     position: absolute;
     bottom: 4px;
@@ -24,12 +28,12 @@ body {
     border-radius: 2px;
 }
 
-.nav-link {
+#page-header .nav-link {
     color: #0c0c0c;
     font-weight: 400;
 }
 
-.customize-package-btn {
+#page-header .customize-package-btn {
     background-color: #11A453;
     border-color: #11A453;
     width: 157px;
@@ -37,35 +41,61 @@ body {
     border-radius: 57px;
 }
 
-.customize-package-btn:hover {
+#page-header .customize-package-btn:hover {
     background-color: #239b65;
     border-color: #239b65;
 }
 
+
+/* Responsive navbar */
+@media (max-width: 992px) {
+    #page-header .navbar-collapse {
+        background-color: white;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    #page-header .nav-link {
+        padding: 0.5rem 0;
+    }
+
+    #page-header .navbar-nav {
+        gap: 0 !important;
+    }
+
+    #page-header .customize-package-btn {
+        margin-top: 1rem;
+    }
+}
+
+/* End Page Header */
+
 /* global */
 .section-sub-title {
-    text-align: center; 
+    text-align: center;
     font-family: 'Water Brush', cursive;
-    font-weight: 400; 
-    font-size: 45px;   
+    font-weight: 400;
+    font-size: 45px;
     color: #11A453;
 }
 
-.section-title {  
+.section-title {
     font-weight: 700;
-    font-style: Bold; 
+    font-style: Bold;
     font-size: 42px;
     line-height: 44px;
     letter-spacing: 0%;
-    text-align: center;  
-    font-weight: 600; 
-    margin-bottom: 3rem; 
-} 
- 
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
 
 /* end global */
 
-.search-box {
+/* Start banner section */
+#banner .search-box {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 12px;
     padding: 1rem 2rem;
@@ -76,33 +106,33 @@ body {
     margin-top: 2rem;
 }
 
-.search-item small {
+#banner .search-item small {
     font-size: 0.75rem;
     color: #ddd;
 }
 
-.search-item strong {
+#banner .search-item strong {
     font-size: 1rem;
 }
 
-.btn-title-sm {
+#banner .btn-title-sm {
     font-size: 11.5px;
     font-weight: 300;
     color: #e8e8e8;
 }
 
-.btn-title {
+#banner .btn-title {
     font-size: 1rem;
     font-weight: 500;
 }
 
-.banner-descriptions {
+#banner .banner-descriptions {
     max-width: 600px;
     font-weight: 200;
     color: #eaeaea;
 }
 
-.banner-subtitle {
+#banner .banner-subtitle {
     font-family: 'Water Brush', cursive;
     font-weight: 400;
     font-style: Regular;
@@ -111,7 +141,7 @@ body {
     letter-spacing: 0%;
 }
 
-.banner-title {
+#banner .banner-title {
     font-weight: 600;
     font-size: 5.64rem;
     line-height: 100%;
@@ -119,43 +149,43 @@ body {
 }
 
 @media (max-width: 768px) {
-    .banner-subtitle {
+    #banner .banner-subtitle {
         font-size: 2rem;
     }
 
-    .banner-title {
+    #banner .banner-title {
         font-size: 2.5rem;
     }
 
-    .banner-descriptions {
+    #banner .banner-descriptions {
         font-size: 0.9rem;
     }
 }
 
 @media (max-width: 576px) {
-    .banner-subtitle {
+    #banner .banner-subtitle {
         font-size: 1.8rem;
     }
 
-    .banner-title {
+    #banner .banner-title {
         font-size: 2rem;
     }
 
-    .banner-descriptions {
+    #banner .banner-descriptions {
         font-size: 0.8rem;
     }
 }
 
-.blur {
+#banner .blur {
     backdrop-filter: blur(3px) !important;
     -webkit-backdrop-filter: blur(3px) !important;
 }
 
-.rounded-lg {
+#banner .rounded-lg {
     border-radius: 28px;
 }
 
-.tour-filter-box {
+#banner .tour-filter-box {
     width: 100%;
     max-width: 580px;
     height: auto;
@@ -165,7 +195,7 @@ body {
     background-color: rgba(58, 58, 58, 0.3);
 }
 
-.filter-box-btn {
+#banner .filter-box-btn {
     width: 65px;
     height: 65px;
     border-radius: 20px;
@@ -174,104 +204,84 @@ body {
     border: 0px;
 }
 
-.filter-box-btn:hover {
+#banner .filter-box-btn:hover {
     background: #0e984c;
     border: 0px
 }
 
-.bi-calendar-event,
-.bi-geo-alt {
+#banner .bi-calendar-event,
+#banner .bi-geo-alt {
     color: #f3f3f3;
 }
 
-.devider {
+#banner .devider {
     height: 25px !important;
     color: #f3f3f3 !important;
     border-right: 1px solid #f3f3f3 !important;
 }
 
-/* Responsive navbar */
-@media (max-width: 992px) {
-    .navbar-collapse {
-        background-color: white;
-        padding: 1rem;
-        margin-top: 1rem;
-        border-radius: 0.5rem;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-link {
-        padding: 0.5rem 0;
-    }
-
-    .navbar-nav {
-        gap: 0 !important;
-    }
-
-    .customize-package-btn {
-        margin-top: 1rem;
-    }
-}
-
 /* Responsive filter box */
 @media (max-width: 768px) {
-    .tour-filter-box {
+    #banner .tour-filter-box {
         flex-direction: column;
         gap: 1rem;
         padding: 1.5rem;
     }
 
-    .devider {
+    #banner .devider {
         display: none;
     }
 
-    .filter-box-btn {
+    #banner .filter-box-btn {
         width: 100%;
         margin-top: 0.5rem;
     }
 }
 
 /* Carousel overlay positioning */
-.carousel-overlay {
+#banner .carousel-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     padding: 0 1rem;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
 }
-.heroSwiper {
-  background-color: #000;
-  width: 100%;
-  height: 90vh;
+
+#banner .heroSwiper {
+    background-color: #000;
+    width: 100%;
+    height: 80vh;
 }
-.heroSwiper .swiper-slide {
-  transition: opacity 1s ease-in-out;
-  background-color: #000;
+
+#banner .heroSwiper .swiper-slide {
+    transition: opacity 1s ease-in-out;
+    background-color: #000;
 }
-.heroSwiper img { 
+
+#banner .heroSwiper img {
     object-fit: cover;
     display: block;
-    width: 100%; 
+    width: 100%;
+    max-height: 80vh;
 }
 
 @media (max-width: 576px) {
-    .carousel-overlay {
+    #banner .carousel-overlay {
         top: 40%;
     }
 
-.heroSwiper { 
-  max-height: 464px;
-  height: 90vh;
-  max-height: 764px;
+    #banner .heroSwiper {
+        max-height: 464px;
+        height: 90vh;
+        max-height: 764px;
+    }
 }
-}
-
 
 /* tour schedule section */
 #tour-schedule .tour-card {
@@ -311,11 +321,12 @@ body {
 }
 
 #tour-schedule .sub-title {
-     font-family: 'Water Brush', cursive;
+    font-family: 'Water Brush', cursive;
     font-weight: 400;
     font-style: Regular;
-    font-size: 45px; 
+    font-size: 45px;
 }
+
 #tour-schedule .section-title {
     font-weight: 700;
     font-style: Bold;
@@ -406,28 +417,28 @@ body {
 
 
 
-/* popular section */ 
+/* popular section */
 
-#popular-day-trips .section-sub-title { 
-     font-family: 'Water Brush', cursive;
+#popular-day-trips .section-sub-title {
+    font-family: 'Water Brush', cursive;
     font-weight: 400;
     font-style: Regular;
     font-size: 45px;
     line-height: 44px;
     vertical-align: middle;
-    color: #11A453; 
+    color: #11A453;
 }
 
-#popular-day-trips .section-title { 
-   font-family: Poppins;
+#popular-day-trips .section-title {
+    font-family: Poppins;
     font-weight: 700;
     font-style: Bold;
-    font-size: 42px; 
+    font-size: 42px;
     line-height: 44px;
     letter-spacing: 0%;
     text-align: center;
-    vertical-align: middle; 
-} 
+    vertical-align: middle;
+}
 
 #popular-day-trips .section-title h5 {
     color: #24a86c;
@@ -473,7 +484,7 @@ body {
     font-size: 13px !important;
     color: #11A453;
     font-weight: 400 ! important;
-    font-size: 12px !important; 
+    font-size: 12px !important;
 
 }
 
@@ -485,12 +496,12 @@ body {
     border: 0.8px solid #11A453 !important;
     color: white;
     border: none;
-    padding: 5px 15px; 
+    padding: 5px 15px;
     font-size: 12px;
     font-weight: 400 !important;
     width: 80;
-    height: 32;  
-    border-radius: 33px;  
+    height: 32;
+    border-radius: 33px;
 }
 
 #popular-day-trips .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -501,6 +512,7 @@ body {
 #popular-day-trips .swiper-pagination-bullet-active {
     background-color: #24a86c !important;
 }
+
 /* end popular section */
 
 
@@ -508,28 +520,28 @@ body {
 /* holyday section */
 
 #featured .section-sub-title {
-    text-align: center; 
+    text-align: center;
     font-family: 'Water Brush', cursive;
-    font-weight: 400; 
-    font-size: 45px;   
+    font-weight: 400;
+    font-size: 45px;
     color: #11A453;
 }
 
-#featured .section-title {  
+#featured .section-title {
     font-weight: 700;
-    font-style: Bold; 
+    font-style: Bold;
     font-size: 42px;
     line-height: 44px;
     letter-spacing: 0%;
-    text-align: center;  
-    font-weight: 600; 
-    margin-bottom: 3rem; 
-} 
- 
-#featured .swiper {
-    padding-bottom: 3rem; 
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 3rem;
 }
- 
+
+#featured .swiper {
+    padding-bottom: 3rem;
+}
+
 #featured .tour-card {
     background: white;
     border-radius: 1rem;
@@ -553,13 +565,13 @@ body {
     background-color: #11A453;
     color: white;
     padding: 0.25rem 0.75rem;
-    border-radius: 1.25rem; 
+    border-radius: 1.25rem;
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     z-index: 10;
-} 
+}
 
 #featured .tour-card-body {
     padding: 1rem 1.25rem 1.25rem 1.25rem;
@@ -587,17 +599,17 @@ body {
 }
 
 #featured .location {
-    font-size:14px;
+    font-size: 14px;
     color: #7c8a80;
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-bottom: 1rem;
 }
- 
+
 
 #featured .explore-link {
     font-weight: 700;
-    font-size:14px;
+    font-size: 14px;
     color: #0b1749;
     text-decoration: none;
     display: inline-flex;
@@ -617,6 +629,7 @@ body {
     color: #2c8c3e;
     text-align: right;
 }
+
 #featured .from {
     font-weight: 300;
     font-size: 14px;
@@ -672,7 +685,7 @@ body {
 }
 
 
-/* tour activity section  */ 
+/* tour activity section  */
 #tour-activity .tour-activity-swiper .title {
     font-size: 20px !important;
     font-weight: 600;
@@ -691,7 +704,7 @@ body {
 /* recent post section */
 #recent-post .post-img-wrapper {
     height: 250px;
-    background-color: #aeb6bd; 
+    background-color: #aeb6bd;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -711,10 +724,10 @@ body {
     font-size: 1rem;
     color: #6c757d;
 }
- 
+
 #recent-post .post-img-wrapper {
     height: 250px;
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
     border-radius: 0.75rem;
     overflow: hidden;
     display: flex;
@@ -741,7 +754,8 @@ body {
 #recent-post .post-img-wrapper img[src=""]+.no-image {
     display: block;
 }
-#recent-post .card-body .badge{
+
+#recent-post .card-body .badge {
     background: #11A453;
     font-size: 11px !important;
     padding: 6px 10px;
@@ -761,42 +775,44 @@ body {
     font-weight: 400;
     color: #999999 !important
 }
+
 #recent-post .card-body .read-more {
-    font-size: 14px !important; 
+    font-size: 14px !important;
     font-weight: 600;
 }
+
 #recent-post .card-title {
     font-size: 21px !important;
     font-weight: 400 ! important;
     color: #000000 !important;
     margin-top: 10px;
     margin-bottom: 15px;
-} 
+}
 
 /* end of recent post section */
 
 
-/* travelers choice section */ 
-#traveller-choice .section-sub-title { 
-     font-family: 'Water Brush', cursive;
+/* travelers choice section */
+#traveller-choice .section-sub-title {
+    font-family: 'Water Brush', cursive;
     font-weight: 400;
     font-style: Regular;
     font-size: 45px;
     line-height: 44px;
     vertical-align: middle;
-    color: #11A453; 
+    color: #11A453;
 }
 
-#traveller-choice .section-title { 
-   font-family: Poppins;
+#traveller-choice .section-title {
+    font-family: Poppins;
     font-weight: 700;
     font-style: Bold;
-    font-size: 42px; 
+    font-size: 42px;
     line-height: 44px;
     letter-spacing: 0%;
     text-align: center;
-    vertical-align: middle; 
-} 
+    vertical-align: middle;
+}
 
 #traveller-choice .section-title h5 {
     color: #24a86c;
@@ -851,7 +867,7 @@ body {
     font-size: 13px !important;
     color: #11A453;
     font-weight: 400 ! important;
-    font-size: 12px !important; 
+    font-size: 12px !important;
 
 }
 
@@ -863,12 +879,12 @@ body {
     border: 0.8px solid #11A453 !important;
     color: white;
     border: none;
-    padding: 5px 15px; 
+    padding: 5px 15px;
     font-size: 12px;
     font-weight: 400 !important;
     width: 80;
-    height: 32;  
-    border-radius: 33px;  
+    height: 32;
+    border-radius: 33px;
 }
 
 #traveller-choice .price {
@@ -879,7 +895,7 @@ body {
     margin-right: 12px;
 }
 
- #traveller-choice .from {
+#traveller-choice .from {
     font-weight: 300;
     font-size: 14px;
     color: #b1b1b1;
@@ -897,135 +913,495 @@ body {
 
 /* end of travelers choice section */
 
+
+/* tours-destination section */
+
+.tours-destination-section {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-image: url('/assets/img/bg/union.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 10% top;
+
+}
+
+#tours-destination .section-sub-title {
+    font-family: 'Water Brush', cursive;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 45px;
+    line-height: 44px;
+    vertical-align: middle;
+    color: #11A453;
+}
+
+#tours-destination .section-title {
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 42px;
+    line-height: 44px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#tours-destination .section-title h5 {
+    color: #24a86c;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#tours-destination .section-title h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#tours-destination .trip-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 430px;
+    background: #e6e6e6;
+}
+
+#tours-destination .trip-card img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#tours-destination .trip-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20vh;
+    padding: 1.9rem 1.7rem;
+    color: white;
+    background: linear-gradient(to top, rgb(72, 72, 72), rgba(41, 41, 41, 0.3), rgba(52, 52, 52, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+
+#tours-destination .trip-info h5 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#tours-destination .trip-info p {
+    margin: 0;
+    font-size: 14px !important;
+    font-weight: 400 ! important;
+
+}
+
+#tours-destination .explore-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(2, 112, 2, 0.3);
+    border: 0.8px solid #11A453 !important;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 400 !important;
+    width: 80;
+    height: 32;
+    border-radius: 33px;
+}
+
+#tours-destination .price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #11A453;
+    text-align: right;
+    margin-right: 12px;
+}
+
+#tours-destination .from {
+    font-weight: 300;
+    font-size: 14px;
+    color: #b1b1b1;
+    text-align: right;
+}
+
+#tours-destination .swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #aaa;
+    opacity: 1;
+}
+
+#tours-destination .swiper-pagination-bullet-active {
+    background-color: #24a86c !important;
+}
+
+#tours-destination .two-column-list {
+    column-count: 2;
+    column-gap: .2rem;
+}
+
+@media (max-width: 576px) {
+    #tours-destination .two-column-list {
+        column-count: 1;
+    }
+}
+
+#tours-destination .two-column-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* end of tours-destination section */
+
 /* ====== Testimonials Section Styles ====== */
 #testimonials {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  padding: 3rem 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 3rem 0;
 }
 
 #testimonials .section-title {
-  font-size: 2rem;
-  font-weight: 700;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 #testimonials .section-subtitle {
-  color: #28a745;
-  font-style: italic;
-  font-weight: 500;
+    color: #28a745;
+    font-style: italic;
+    font-weight: 500;
 }
 
 #testimonials .testimonial-quote {
-  font-size: 1.25rem;
-  font-style: italic;
-  color: #333;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #333;
 }
 
 #testimonials .testimonial-img {
-  width: 64px;
-  height: 64px;
-  object-fit: cover;
-  border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 #testimonials .swiper {
-  width: 100%;
-  padding: 30px 0;
+    width: 100%;
+    padding: 30px 0;
 }
 
 #testimonials .swiper-pagination-bullet {
-  background: #28a745;
+    background: #28a745;
 }
+
 /* end of testimonials section */
 
 /* ====== Why Choose Us Section Styles ====== */
 #why-us {
-  background-color: #fdfbf7;
-  padding: 3rem 0;
-  text-align: center;
-  font-family: Arial, sans-serif;
+    background-color: #fdfbf7;
+    padding: 3rem 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 #why-us .section-title {
-  font-size: 2rem;
-  font-weight: 700;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 #why-us .section-subtitle {
-  color: #28a745;
-  font-style: italic;
-  font-weight: 500;
+    color: #28a745;
+    font-style: italic;
+    font-weight: 500;
 }
 
 #why-us .why-text {
-  max-width: 700px;
-  margin: auto;
-  color: #555;
-  font-size: 1rem;
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+    font-size: 1rem;
 }
 
 #why-us .why-icon img {
-  height: 48px;
-  margin-bottom: 12px;
+    height: 48px;
+    margin-bottom: 12px;
 }
 
 #why-us h6 {
-  font-weight: 600;
-  margin-top: 0.5rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
 }
 
 #why-us p {
-  color: #666;
-  font-size: 0.9rem;
+    color: #666;
+    font-size: 0.9rem;
 }
+
 /* end of why choose us section */
 
 
 
-/* unforgettable section */  
+/* unforgettable section */
 
-  #unforgettable { 
-    padding: 3rem 0;
-    background-color: #fdf9f6;
-  }
+#unforgettable {
+    padding: 3rem 0; 
+}
 
-  #unforgettable .section-subtitle {
+#unforgettable .section-subtitle {
     color: #28a745;
     font-style: italic;
     font-weight: 500;
-  }
+}
 
-  #unforgettable .section-title {
+#unforgettable .section-title {
     font-weight: 700;
     font-size: 2.5rem;
-  }
+}
 
-  #unforgettable .section-description {
-    color: #555;
+#unforgettable .section-description {
+    color: #666666;
     font-size: 1rem;
-  }
+}
 
-  #unforgettable .feature-box {
+#unforgettable .feature-box {
     background-color: #fff;
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 2rem 2.5rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
     transition: all 0.3s ease-in-out;
-  }
+}
 
-  #unforgettable .feature-box:hover {
+#unforgettable .feature-box:hover {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
-  }
+}
 
-  #unforgettable .feature-icon {
-    width: 40px;
-    margin-right: 15px;
-  }
+#unforgettable .feature-icon {
+    width: 55px;
+    height: 55px;
+    margin-right: 35px;
+}
+  
+#unforgettable .feature-title {
+    font-weight: 500 ! important;
+    font-size: 1.2rem;
+    color: #000000 ! important;
+    margin-bottom: 10px !important;
+}
+#unforgettable .feature-box p{
+    font-weight: 400 ! important;
+    font-size: 14px;
+    color: #666666 ! important;
+}
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     #unforgettable .section-title {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
     }
-  } 
-
+}
 /* end of unforgettable section */
+ 
+
+
+#tour-gallery .search-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#tour-gallery .search-item small {
+    font-size: 0.75rem;
+    color: #ddd;
+}
+
+#tour-gallery .search-item strong {
+    font-size: 1rem;
+}
+
+#tour-gallery .btn-title-sm {
+    font-size: 11.5px;
+    font-weight: 300;
+    color: #e8e8e8;
+}
+
+#tour-gallery .btn-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#tour-gallery .banner-descriptions {
+    max-width: 600px;
+    font-weight: 200;
+    color: #eaeaea;
+}
+
+#tour-gallery .banner-subtitle {
+    font-family: 'Water Brush', cursive;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 2.5rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+#tour-gallery .banner-title {
+    font-weight: 600;
+    font-size: 5.64rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+@media (max-width: 768px) {
+    #tour-gallery .banner-subtitle {
+        font-size: 2rem;
+    }
+
+    #tour-gallery .banner-title {
+        font-size: 2.5rem;
+    }
+
+    #tour-gallery .banner-descriptions {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #tour-gallery .banner-subtitle {
+        font-size: 1.8rem;
+    }
+
+    #tour-gallery .banner-title {
+        font-size: 2rem;
+    }
+
+    #tour-gallery .banner-descriptions {
+        font-size: 0.8rem;
+    }
+}
+
+#tour-gallery .blur {
+    backdrop-filter: blur(3px) !important;
+    -webkit-backdrop-filter: blur(3px) !important;
+}
+
+#tour-gallery .rounded-lg {
+    border-radius: 28px;
+}
+
+#tour-gallery .tour-filter-box {
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+    padding: 1rem;
+    opacity: 1;
+    border-radius: 28px;
+    background-color: rgba(58, 58, 58, 0.3);
+}
+
+#tour-gallery .filter-box-btn {
+    width: 65px;
+    height: 65px;
+    border-radius: 20px;
+    font-size: 19px;
+    background: #11A453;
+    border: 0px;
+}
+
+#tour-gallery .filter-box-btn:hover {
+    background: #0e984c;
+    border: 0px
+}
+
+#tour-gallery .bi-calendar-event,
+#tour-gallery .bi-geo-alt {
+    color: #f3f3f3;
+}
+
+.devider {
+    height: 25px !important;
+    color: #f3f3f3 !important;
+    border-right: 1px solid #f3f3f3 !important;
+}
+
+/* Responsive filter box */
+@media (max-width: 768px) {
+    #tour-gallery .tour-filter-box {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    #tour-gallery .devider {
+        display: none;
+    }
+
+    #tour-gallery .filter-box-btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Carousel overlay positioning */
+#tour-gallery .carousel-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+}
+
+#tour-gallery .heroSwiper {
+    background-color: #000;
+    width: 100%;
+    height: 80vh;
+}
+
+#tour-gallery .heroSwiper .swiper-slide {
+    transition: opacity 1s ease-in-out;
+    background-color: #000;
+}
+
+#tour-gallery .heroSwiper img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    max-height: 80vh;
+} 
+
+/* gallery-slider section */
+#tour-gallery .logo {
+    width: 60px !important;
+    height: 60px !important; 
+    padding: 10px;
+    margin-bottom: 7px;
+}
+
+@media (max-width: 576px) {
+    #tour-gallery .carousel-overlay {
+        top: 40%;
+    }
+
+    #tour-gallery .heroSwiper {
+        max-height: 464px;
+        height: 90vh;
+        max-height: 764px;
+    }
+}
+
+
+/* End of gallery-slider section */
