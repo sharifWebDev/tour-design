@@ -1112,19 +1112,33 @@ body {
     letter-spacing: 0%;
     text-align: center;
     vertical-align: middle;
+    margin-bottom: 25px;
 }
 
 #testimonials .testimonial-quote {
     font-size: 18px; 
-    color: #666666;
+    color: #666666; 
 }
-#testimonials .testimonial-quote-logo {
-    font-size: 18pxrem; 
+#testimonials .title {
+    font-size: 20px; 
+    color: #000000;
+    font-weight: 500;
+}
+
+#testimonials .address {
+    font-size: 14px; 
+    color: #666666; 
+}
+
+#testimonials i {
+    font-size: 68px !important;
+    color: #F1E3D9;
+    text-align: start;
 }
 
 #testimonials .testimonial-img {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -1134,7 +1148,7 @@ body {
     padding: 30px 0;
 }
 
-#testimonials .swiper-pagination-bullet {
+#testimonials .swiper-pagination-bullet .active{
     background: #28a745;
 }
 
@@ -1142,14 +1156,24 @@ body {
 
 /* ====== Why Choose Us Section Styles ====== */
 #why-us { 
-    padding: 3rem 0;
+    padding: 6rem 0 !important;
+    text-align: center; 
+}
+
+#why-us .row { 
+    padding: 2rem 0;
     text-align: center;
     font-family: Arial, sans-serif;
+    background-image: url('/assets/img/bg/bg-line.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: -110px top; 
 }
 
 #why-us .section-title {
-    font-size: 2rem;
-    font-weight: 700;
+   font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2.6rem !important;
 }
 
 #why-us .section-subtitle {
@@ -1158,26 +1182,29 @@ body {
     font-weight: 500;
 }
 
-#why-us .why-text {
-    max-width: 700px;
+#why-us .description {
+    max-width: 70%;
     margin: auto;
     color: #555;
     font-size: 1rem;
 }
 
 #why-us .why-icon img {
-    height: 48px;
+    height: 60px;
+    width: 60px;
     margin-bottom: 12px;
 }
 
 #why-us h6 {
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 20px;
     margin-top: 0.5rem;
 }
 
 #why-us p {
-    color: #666;
-    font-size: 0.9rem;
+    color: #666666;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 /* end of why choose us section */
@@ -1442,3 +1469,56 @@ body {
 }
 /* End of gallery-slider section */
 
+
+/* Start footer section */
+
+#footer .navbar-brand img{
+    height: 91px;
+    width: auto;
+    margin-bottom: 20px;
+}
+#footer .title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+    color: #000000;
+}
+#footer p, #footer a, #footer li{
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000; 
+    margin-bottom: 2px;
+    text-align: left;
+} 
+#footer .useful-links a{
+    font-weight: 600;
+    font-size: 13px; 
+}
+#footer .social-icons {
+    margin-top: 10px;
+} 
+#footer .social-icons a{
+    height: 40px;
+    width: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    border: 1px solid #dcdcdc; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+} 
+
+/* skicty footer */
+#sticky-footer{ 
+    bottom: 0;
+    left: 0;
+    margin-top: 40px;
+    width: 100%;
+    max-height: 98px;
+    z-index: 9999; 
+    background: #BAA28F80;
+} 
+/* End footer section */
