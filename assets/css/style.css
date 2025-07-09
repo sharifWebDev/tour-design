@@ -1212,12 +1212,89 @@ html {
 
 @media (max-width: 576px) {
     #tours-destination .two-column-list {
-        column-count: 1;
+        column-count: 2;
+        font-size: 12px ! important;
+        margin-bottom: 0px ! important;
+        text-align: left ! important;
+        padding-left: 10px ! important;
+    }
+    #tours-destination p{   
+        padding: 10px ! important;
     }
 }
 
 #tours-destination .two-column-list li {
     margin-bottom: 0.5rem;
+}
+@media (max-width: 992px) {
+    /* Stack text and slider vertically */
+    .tours-destination-section .row {
+        flex-direction: column;
+    }
+
+    #tours-destination .tour-count-list {
+        margin-bottom: 2rem;
+    }
+
+    #tours-destination .swiper {
+        margin-left: 0 !important;
+    }
+
+    /* Resize swiper trip card for tablets */
+    #tours-destination .trip-card,
+    #tours-destination .trip-card img {
+        height: 330px;
+    }
+
+    #tours-destination .trip-info {
+        height: 25vh;
+        padding: 1.2rem;
+    }
+
+    #tours-destination .trip-info h4 {
+        font-size: 18px;
+    }
+
+    #tours-destination .trip-info p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Adjust titles and text alignment for phones */
+    #tours-destination h2.section-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #tours-destination p.text-muted {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #tours-destination .trip-card,
+    #tours-destination .trip-card img {
+        height: 250px;
+    }
+
+    #tours-destination .trip-info {
+        padding: 1rem;
+        height: 30%;
+    }
+
+    #tours-destination .trip-info h4 {
+        font-size: 16px;
+    }
+
+    #tours-destination .trip-info p {
+        font-size: 13px;
+    }
+
+    /* Hide swiper buttons on small screens if needed */
+    .tours-destination-prev,
+    .tours-destination-next {
+        display: none !important;
+    }
 }
 
 /* end of tours-destination section */
